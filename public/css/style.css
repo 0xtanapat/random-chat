@@ -1,0 +1,239 @@
+/*** Overlays (background) ***/
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+/*** Welcome page ***/
+
+#welcomePage {
+  z-index: 3;
+}
+
+#welcomeTitleContainer {
+  position: relative;
+  top: 5%;
+  text-align: center;
+  margin-top: 30px;
+  align-items: center;
+}
+
+#welcomeTitle {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: -40px; */
+}
+
+#stick-fig {
+  width: 200px;
+  margin-top: -50px;
+}
+
+/* #connectButton {
+  margin-top: -30px;
+} */
+
+/*** Username form page ***/
+
+#usernameFormPage {
+  z-index: 2;
+}
+
+#usernameFormPage .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  align-items: center;
+}
+
+#usernameFormPage .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+#usernameFormPage .title {
+  font-size: 200%;
+}
+
+#usernameFormPage .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+#usernameFormPage .title,
+#usernameFormPage .usernameInput {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+}
+
+/*** Spinner page ***/
+
+#spinnerPage {
+  z-index: 1;
+}
+
+.roomWaitMessage {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+div.roomWaitMessage {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.welcomeTitle h3 {
+  margin: 0;
+}
+
+/*** Refactor UK notifications a bit ***/
+
+.uk-notification {
+  width: auto !important;
+  min-width: 300px !important;
+  max-width: 1700px !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.uk-notification-message {
+  padding-right: 1em !important;
+  width: auto !important;
+  max-width: 90% !important;
+  text-align: center;
+  display: inline-flex;
+}
+
+/*** Chat ***/
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.messaging {
+  padding: 0 0 50px 0;
+}
+
+.inbox_msg {
+  border: 1px solid #c4c4c4;
+  clear: both;
+  overflow: hidden;
+}
+
+.mesgs {
+  padding: 30px 15px 0 25px;
+}
+
+.msg_history {
+  height: 516px;
+  overflow-y: scroll;
+}
+
+.type_msg {
+  border-top: 1px solid #c4c4c4;
+  position: relative;
+}
+
+/* Message style */
+
+.incoming_msg {
+  overflow: hidden;
+  margin: 26px 0 26px;
+}
+
+.sub_incoming_msg {
+  max-width: 65%;
+  width: auto;
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  float: left;
+  word-wrap: break-word;
+}
+
+.outgoing_msg {
+  overflow: hidden;
+  margin: 26px 0 26px;
+}
+
+.sub_outgoing_msg {
+  max-width: 65%;
+  width: auto;
+  background: #05728f none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  float: right;
+  word-wrap: break-word;
+}
+
+/* Input form  */
+
+.type_msg {
+  min-height: 47px;
+}
+
+.input_msg_write {
+  padding-right: 44px;
+  padding-top: 10px;
+  height: auto;
+}
+
+.write_msg {
+  border: 0 none white;
+  overflow-y: scroll;
+  padding: 5px;
+  outline: none;
+  resize: none;
+  width: 100%;
+  max-height: 5em;
+  height: auto;
+}
+
+.msg_send_btn {
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 33px;
+}

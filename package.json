@@ -1,0 +1,23 @@
+{
+  "name": "random-chat",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.data-ensta.fr:data/random-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^13.12.0",
+    "nodemon": "^2.0.3",
+    "npm": "^6.14.4",
+    "socket.io": "^2.3.0"
+  }
+}
